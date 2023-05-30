@@ -1,0 +1,5 @@
+<form [formGroup]="productsForm" (ngSubmit)="onHanlesubmit()">
+    <input type="text" formControlName="name">
+    <input type="number"formControlName=price>
+    <button type="submit" [disabled]="!productsForm.valid">Update</button>
+</form>
